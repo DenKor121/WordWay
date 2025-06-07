@@ -1,1 +1,151 @@
 
+
+body {
+  margin: 0;
+  font-family: 'Lilita One', sans-serif;
+  background-color: #ffffff;
+}
+
+/* Общий контейнер */
+.container {
+  position: relative;
+  width: 1728px;
+  height: 1117px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* Хедер */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1728px;
+  height: 129px;
+  background-color: #241e8c;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+  color: #ffffff;
+}
+
+.logo {
+  font-size: 48px;
+  color: #ffffff;
+  margin-right: 80px;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav a {
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Блок с уроками */
+.lessons {
+  position: absolute;
+  top: 174px;
+  left: 85px;
+  width: 498px;
+  height: 726px;
+  background-color: #a92828;
+  border-radius: 45px;
+  padding: 40px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.lessons h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.lesson {
+  background-color: #ffffff;
+  border-radius: 30px;
+  color: #000000;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Кнопка статистики */
+.stats-button {
+  position: absolute;
+  top: 954px;
+  left: 85px;
+  width: 498px;
+  height: 112px;
+  background-color: #241e8c;
+  color: #ffffff;
+  font-size: 32px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lilita One', sans-serif;
+  transition: background-color 0.3s;
+}
+
+.stats-button:hover {
+  background-color: #1a166e;
+}
+
+/* Центральный информационный блок */
+.about {
+  position: absolute;
+  top: 200px;
+  left: 620px;
+  width: 1000px;
+  color: #000000;
+}
+
+.about h1 {
+  font-size: 48px;
+  color: #a92828;
+  margin-bottom: 30px;
+}
+
+.about p {
+  font-size: 28px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Кнопка перехода к тестам */
+.test-button {
+  background-color: #a92828;
+  color: #ffffff;
+  font-size: 32px;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Lilita One', sans-serif;
+  transition: background-color 0.3s;
+}
+
+.test-button:hover {
+  background-color: #911e1e;
+}
+
+/* Контактная информация */
+.contacts {
+  position: absolute;
+  top: 870px;
+  left: 1240px;
+  width: 400px;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #000000;
+}
