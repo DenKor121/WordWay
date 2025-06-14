@@ -1,150 +1,161 @@
 * { 
-  box-sizing: border-box; /* Усі елементи враховують padding та border у ширину/висоту */
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0; /* Прибирає зовнішні відступи браузера */
-  font-family: 'Lilita One', sans-serif; /* Встановлює шрифт Lilita One */
-  background-color: #ffffff; /* Білий фон сторінки */
-  height: 100vh; /* Висота сторінки — 100% висоти вікна */
-  overflow: hidden; /* Приховує прокрутку */
+  margin: 0;
+  font-family: 'Lilita One', sans-serif;
+  background-color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .container {
-  position: relative; /* Встановлює відносне позиціонування для дочірніх елементів */
-  width: 100vw; /* Ширина — 100% ширини вікна браузера */
-  height: 100vh; /* Висота — 100% висоти вікна браузера */
-  background: #ffffff; /* Білий фон контейнера */
-  overflow: hidden; /* Обрізає вміст, який виходить за межі */
-  aspect-ratio: 16 / 9; /* Співвідношення сторін — 16:9 */
-  margin: 0 auto; /* Горизонтальне центрування */
-  max-width: 100%; /* Максимальна ширина — 100% */
-  max-height: 100%; /* Максимальна висота — 100% */
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .header {
-  position: absolute; /* Абсолютне позиціонування в межах контейнера */
-  top: 0; /* Відступ зверху — 0 */
-  left: 0; /* Відступ зліва — 0 */
-  width: 100%; /* Повна ширина */
-  height: 8vh; /* Висота — 8% від висоти вікна */
-  background-color: #241e8c; /* Темно-синій фон */
-  display: flex; /* Розміщення елементів у ряд */
-  align-items: center; /* Вирівнювання по вертикалі по центру */
-  padding: 0 5.8vw; /* Відступи зліва і справа */
-  color: #ffffff; /* Білий колір тексту */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+  background-color: #241e8c;
+  display: flex;
+  align-items: center;
+  padding: 0 5.8vw;
+  color: #ffffff;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 4.2vw;
+}
+
+.logo-image {
+  width: 4.0vw; /* Розмір зображення відповідає розміру тексту логотипу */
+  height: 4.0vw;
+  margin-right: 1vw; /* Відступ між зображенням і текстом */
 }
 
 .logo {
-  font-size: 2.5vw; /* Розмір шрифту — 2.5% від ширини вікна */
-  color: #ffffff; /* Білий колір тексту */
-  margin-right: 4.2vw; /* Відступ справа */
+  font-size: 2.5vw;
+  color: #ffffff;
 }
 
 .button {
-  display: flex; /* Виводить кнопки в один ряд */
-  gap: 2.1vw; /* Відстань між кнопками */
+  display: flex;
+  gap: 2.1vw;
 }
 
 .button a {
-  font-size: 1.2vw; /* Розмір шрифту для посилань */
-  color: #ffffff; /* Білий колір тексту */
-  text-decoration: none; /* Без підкреслення */
+  font-size: 1.2vw;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .button a:hover {
-  text-decoration: underline; /* Підкреслення при наведенні */
+  text-decoration: underline;
 }
 
 .lessons {
-  position: absolute; /* Абсолютне позиціонування */
-  top: 10vh; /* Відступ зверху — 10% від висоти */
-  left: 4.4vw; /* Відступ зліва — 4.4% від ширини */
-  width: 28.8vw; /* Ширина блоку */
-  height: 65vh; /* Висота блоку */
-  background-color: #a92828; /* Червоний фон */
-  border-radius: 2.6vw; /* Заокруглення кутів */
-  padding: 2.3vw; /* Внутрішній відступ */
-  color: #ffffff; /* Білий колір тексту */
+  position: absolute;
+  top: 10vh;
+  left: 4.4vw;
+  width: 28.8vw;
+  height: 65vh;
+  background-color: #a92828;
+  border-radius: 2.6vw;
+  padding: 2.3vw;
+  color: #ffffff;
 }
 
 .lessons h2 {
-  font-size: 2.1vw; /* Розмір заголовка */
-  margin-bottom: 1.2vw; /* Відступ знизу */
+  font-size: 2.1vw;
+  margin-bottom: 1.2vw;
 }
 
 .lesson {
-  background-color: #ffffff; /* Білий фон окремого уроку */
-  border-radius: 1.7vw; /* Заокруглення блоку */
-  color: #000000; /* Чорний колір тексту */
-  padding: 1.2vw; /* Внутрішній відступ */
-  margin-bottom: 1.2vw; /* Відступ знизу */
-  font-size: 1.4vw; /* Розмір тексту */
-  box-shadow: 0 0.2vw 0.4vw rgba(0,0,0,0.1); /* Тінь */
+  background-color: #ffffff;
+  border-radius: 1.7vw;
+  color: #000000;
+  padding: 1.2vw;
+  margin-bottom: 1.2vw;
+  font-size: 1.4vw;
+  box-shadow: 0 0.2vw 0.4vw rgba(0,0,0,0.1);
 }
 
 .stats-button {
-  position: absolute; /* Абсолютне позиціонування */
-  top: 85.5vh; /* Відступ зверху */
-  left: 4.4vw; /* Відступ зліва */
-  width: 28.8vw; /* Ширина кнопки */
-  height: 10vh; /* Висота кнопки */
-  background-color: #241e8c; /* Темно-синій фон */
-  color: #ffffff; /* Білий текст */
-  font-size: 1.9vw; /* Розмір шрифту */
-  border-radius: 1.7vw; /* Заокруглення кутів */
-  border: none; /* Без рамки */
-  cursor: pointer; /* Курсор у вигляді руки */
-  font-family: 'Lilita One', sans-serif; /* Шрифт */
-  transition: background-color 0.3s; /* Анімація зміни кольору */
+  position: absolute;
+  top: 85.5vh;
+  left: 4.4vw;
+  width: 28.8vw;
+  height: 10vh;
+  background-color: #241e8c;
+  color: #ffffff;
+  font-size: 1.9vw;
+  border-radius: 1.7vw;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lilita One', sans-serif;
+  transition: background-color 0.3s;
 }
 
 .stats-button:hover {
-  background-color: #1a166e; /* Зміна кольору при наведенні */
+  background-color: #1a166e;
 }
 
 .about {
-  position: absolute; /* Абсолютне позиціонування */
-  top: 12vh; /* Відступ зверху */
-  left: 35.8vw; /* Відступ зліва */
-  width: 57.8vw; /* Ширина блоку */
-  color: #000000; /* Чорний текст */
+  position: absolute;
+  top: 12vh;
+  left: 35.8vw;
+  width: 57.8vw;
+  color: #000000;
 }
 
 .about h1 {
-  font-size: 2.5vw; /* Розмір заголовка */
-  color: #a92828; /* Червоний колір */
-  margin-bottom: 1.7vw; /* Відступ знизу */
+  font-size: 2.5vw;
+  color: #a92828;
+  margin-bottom: 1.7vw;
 }
 
 .about p {
-  font-size: 1.4vw; /* Розмір тексту */
-  line-height: 1.6; /* Міжрядковий інтервал */
-  margin-bottom: 2.3vw; /* Відступ знизу */
+  font-size: 1.4vw;
+  line-height: 1.6;
+  margin-bottom: 2.3vw;
 }
 
 .test-button {
-  background-color: #a92828; /* Червоний фон кнопки */
-  color: #ffffff; /* Білий текст */
-  font-size: 1.9vw; /* Розмір шрифту */
-  padding: 1.2vw 2.3vw; /* Внутрішні відступи */
-  border: none; /* Без рамки */
-  border-radius: 1.7vw; /* Заокруглення кутів */
-  cursor: pointer; /* Курсор при наведенні */
-  font-family: 'Lilita One', sans-serif; /* Шрифт */
-  transition: background-color 0.3s; /* Плавна зміна кольору */
+  background-color: #a92828;
+  color: #ffffff;
+  font-size: 1.9vw;
+  padding: 1.2vw 2.3vw;
+  border: none;
+  border-radius: 1.7vw;
+  cursor: pointer;
+  font-family: 'Lilita One', sans-serif;
+  transition: background-color 0.3s;
 }
 
 .test-button:hover {
-  background-color: #911e1e; /* Темніший червоний при наведенні */
+  background-color: #911e1e;
 }
 
 .contacts {
-  position: absolute; /* Абсолютне позиціонування */
-  top: 78vh; /* Відступ зверху */
-  left: 71.6vw; /* Відступ зліва */
-  width: 23.1vw; /* Ширина блоку */
-  font-size: 1.2vw; /* Розмір тексту */
-  line-height: 1.8; /* Висота рядків */
-  color: #000000; /* Чорний текст */
+  position: absolute;
+  top: 78vh;
+  left: 71.6vw;
+  width: 23.1vw;
+  font-size: 1.2vw;
+  line-height: 1.8;
+  color: #000000;
 }
