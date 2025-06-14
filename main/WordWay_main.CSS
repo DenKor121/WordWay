@@ -1,149 +1,257 @@
 body {
-  margin: 0;
-  font-family: 'Lilita One', sans-serif;
-  background-color: #ffffff;
+    font-family: 'Lilita One', cursive;
+    background: #fff;
+    width: 1728px; /* 1920 * 0.9 */
+    height: 972px; /* 1080 * 0.9 */
+    overflow-x: auto;
 }
 
-/* Общий контейнер */
-.container {
-  position: relative;
-  width: 1728px;
-  height: 1117px;
-  margin: 0 auto;
-  background: #ffffff;
-  overflow: hidden;
+.main-container {
+    width: 1728px; /* 1920 * 0.9 */
+    height: 972px; /* 1080 * 0.9 */
+    background: #fff;
 }
 
-/* Хедер */
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1728px;
-  height: 129px;
-  background-color: #241e8c;
-  display: flex;
-  align-items: center;
-  padding: 0 100px;
-  color: #ffffff;
+    width: 1728px; /* 1920 * 0.9 */
+    height: 81px; /* 90 * 0.9 */
+    background: #241e8c;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .logo {
-  font-size: 48px;
-  color: #ffffff;
-  margin-right: 80px;
+    font-size: 32.4px; /* 36 * 0.9 */
+    color: #a92828;
+    position: absolute;
+    top: 18px; /* 20 * 0.9 */
+    left: 104.4px; /* 116 * 0.9 */
 }
 
-.nav {
-  display: flex;
-  gap: 40px;
+.nav-button {
+    width: 180px; /* 200 * 0.9 */
+    height: 45px; /* 50 * 0.9 */
+    background: #fff;
+    border: 1.8px solid #a92828; /* 2 * 0.9 */
+    border-radius: 4.5px; /* 5 * 0.9 */
+    position: absolute;
+    cursor: pointer;
 }
 
-.nav a {
-  font-size: 24px;
-  color: #ffffff;
-  text-decoration: none;
+.nav-button:hover {
+    background: #f0f0f0;
 }
 
-.nav a:hover {
-  text-decoration: underline;
+.nav-button:active {
+    background: #e0e0e0;
 }
 
-/* Блок с уроками */
-.lessons {
-  position: absolute;
-  top: 174px;
-  left: 85px;
-  width: 498px;
-  height: 726px;
-  background-color: #a92828;
-  border-radius: 45px;
-  padding: 40px;
-  box-sizing: border-box;
-  color: #ffffff;
+.nav-button span {
+    font-size: 14.4px; /* 16 * 0.9 */
+    color: #a92828;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.lessons h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+.nav-home { top: 19.8px; left: 736.2px; } /* 22 * 0.9, 818 * 0.9 */
+.nav-start { top: 19.8px; left: 946.8px; } /* 22 * 0.9, 1052 * 0.9 */
+.nav-learning { top: 19.8px; left: 1157.4px; } /* 22 * 0.9, 1286 * 0.9 */
+.nav-contact { top: 19.8px; left: 1368px; } /* 22 * 0.9, 1520 * 0.9 */
+
+.logo-image {
+    position: absolute;
+    width: 90px; /* 100 * 0.9 */
+    height: 85.5px; /* 95 * 0.9 */
+    top: 0;
+    left: 0;
 }
 
-.lesson {
-  background-color: #ffffff;
-  border-radius: 30px;
-  color: #000000;
-  padding: 20px;
-  margin-bottom: 20px;
-  font-size: 24px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.vocabulary-section {
+    width: 429.3px; /* 477 * 0.9 */
+    height: 281.7px; /* 313 * 0.9 */
+    background: #241e8c;
+    position: absolute;
+    top: 167.4px; /* 186 * 0.9 */
+    left: 46.8px; /* 52 * 0.9 */
+    border-radius: 4.5px; /* 5 * 0.9 */
 }
 
-/* Кнопка статистики */
-.stats-button {
-  position: absolute;
-  top: 954px;
-  left: 85px;
-  width: 498px;
-  height: 112px;
-  background-color: #241e8c;
-  color: #ffffff;
-  font-size: 32px;
-  border-radius: 30px;
-  border: none;
-  cursor: pointer;
-  font-family: 'Lilita One', sans-serif;
-  transition: background-color 0.3s;
+.vocabulary-title {
+    font-size: 28.8px; /* 32 * 0.9 */
+    color: #fff;
+    position: absolute;
+    top: 7.2px; /* 8 * 0.9 */
+    left: 43.2px; /* 48 * 0.9 */
 }
 
-.stats-button:hover {
-  background-color: #1a166e;
+.vocabulary-section span {
+    position: absolute;
+    width: 477px;
+    height: 313px;
+    left: 52px;
+    top: 186px;
+    background: #241e8c;
 }
 
-/* Центральный информационный блок */
-.about {
-  position: absolute;
-  top: 200px;
-  left: 620px;
-  width: 1000px;
-  color: #000000;
+
+.word-item {
+    width: 327.6px; /* 364 * 0.9 */
+    height: 28.8px; /* 32 * 0.9 */
+    background: #fff;
+    position: absolute;
+    cursor: pointer;
 }
 
-.about h1 {
-  font-size: 48px;
-  color: #a92828;
-  margin-bottom: 30px;
+.word-item:hover {
+    background: #f0f0f0;
+    transform: translateX(4.5px); /* 5 * 0.9 */
 }
 
-.about p {
-  font-size: 28px;
-  line-height: 1.6;
-  margin-bottom: 40px;
+.word-item span {
+    font-size: 21.6px; /* 24 * 0.9 */
+    color: #a92828;
+    position: absolute;
+    top: 1.8px; /* 2 * 0.9 */
+    left: 2.7px; /* 3 * 0.9 */
 }
 
-/* Кнопка перехода к тестам */
+.word1 { top: 94.5px; } /* 105 * 0.9 */
+.word2 { top: 150.3px; } /* 167 * 0.9 */
+.word3 { top: 204.3px; } /* 227 * 0.9 */
+
+.view-all {
+    width: 327.6px; /* 364 * 0.9 */
+    height: 27px; /* 30 * 0.9 */
+    background: #fff;
+    position: absolute;
+    top: 220.5px; /* 245 * 0.9 */
+    left: 16.2px; /* 18 * 0.9 */
+    cursor: pointer;
+}
+
+.view-all:hover {
+    background: #f0f0f0;
+    transform: translateX(4.5px); /* 5 * 0.9 */
+}
+
+.view-all span {
+    font-size: 21.6px; /* 24 * 0.9 */
+    color: #a92828;
+    position: absolute;
+    top: 0.9px; /* 1 * 0.9 */
+    left: 0;
+}
+
+.main-content {
+    width: 993.6px; /* 1104 * 0.9 */
+    height: 282.6px; /* 314 * 0.9 */
+    background: #241e8c;
+    position: absolute;
+    top: 165.6px; /* 184 * 0.9 */
+    left: 520.2px; /* 578 * 0.9 */
+    border-radius: 4.5px; /* 5 * 0.9 */
+}
+
+.main-text {
+    font-size: 28.8px; /* 32 * 0.9 */
+    color: #fff;
+    position: absolute;
+    top: 9px; /* 10 * 0.9 */
+    left: 10.8px; /* 12 * 0.9 */
+    width: 972px; /* 1080 * 0.9 */
+    height: 266.4px; /* 296 * 0.9 */
+}
+
+.secondary-content {
+    width: 993.6px; /* 1104 * 0.9 */
+    height: 282.6px; /* 314 * 0.9 */
+    background: #241e8c;
+    position: absolute;
+    top: 494.1px; /* 549 * 0.9 */
+    left: 45px; /* 50 * 0.9 */
+    border-radius: 4.5px; /* 5 * 0.9 */
+}
+
+.secondary-text {
+    font-size: 28.8px; /* 32 * 0.9 */
+    color: #fff;
+    position: absolute;
+    top: 18.9px; /* 21 * 0.9 */
+    left: 12.6px; /* 14 * 0.9 */
+    width: 968.4px; /* 1076 * 0.9 */
+    height: 243.9px; /* 271 * 0.9 */
+    white-space: pre-line;
+}
+
 .test-button {
-  background-color: #a92828;
-  color: #ffffff;
-  font-size: 32px;
-  padding: 20px 40px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  font-family: 'Lilita One', sans-serif;
-  transition: background-color 0.3s;
+    width: 380.7px; /* 423 * 0.9 */
+    height: 63.9px; /* 71 * 0.9 */
+    background: #241e8c;
+    position: absolute;
+    top: 503.1px; /* 559 * 0.9 */
+    left: 1123.2px; /* 1248 * 0.9 */
+    border-radius: 4.5px; /* 5 * 0.9 */
+    cursor: pointer;
 }
 
 .test-button:hover {
-  background-color: #911e1e;
+    background: #3a2ea0;
 }
 
-/* Контактная информация */
-.contacts {
-  position: absolute;
-  top: 870px;
-  left: 1240px;
-  width: 400px;
-  font-size: 20px;
-  line-height: 1.8;
-  color: #000000;
+.test-button:active {
+    background: #1a1570;
+}
+
+.test-button span {
+    font-size: 28.8px; /* 32 * 0.9 */
+    color: #fff;
+    position: absolute;
+    top: 15.3px; /* 17 * 0.9 */
+    left: 66.6px; /* 74 * 0.9 */
+}
+
+.contact-title {
+    font-size: 28.8px; /* 32 * 0.9 */
+    color: #a92828;
+    position: absolute;
+    top: 589.5px; /* 655 * 0.9 */
+    left: 1156.5px; /* 1285 * 0.9 */
+}
+
+.contact-info {
+    width: 412.2px; /* 458 * 0.9 */
+    height: 348.3px; /* 387 * 0.9 */
+    background: #a92828;
+    position: absolute;
+    top: 630px; /* 700 * 0.9 */
+    left: 1123.2px; /* 1248 * 0.9 */
+    border-radius: 4.5px; /* 5 * 0.9 */
+}
+
+.contact-text {
+    font-size: 21.6px; /* 24 * 0.9 */
+    color: #fff;
+    position: absolute;
+    top: 4.5px; /* 5 * 0.9 */
+    left: 7.2px; /* 8 * 0.9 */
+    width: 417.6px; /* 464 * 0.9 */
+    height: 345.6px; /* 384 * 0.9 */
+    white-space: pre-line;
+}
+
+.contact-text .underlined {
+    text-decoration: underline;
+}
+
+.footer {
+    width: 993.6px; /* 1104 * 0.9 */
+    height: 170.1px; /* 189 * 0.9 */
+    background: #a92828;
+    position: absolute;
+    top: 808.2px; /* 898 * 0.9 */
+    left: 45px; /* 50 * 0.9 */
+    border-radius: 4.5px; /* 5 * 0.9 */
 }
