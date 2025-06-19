@@ -42,9 +42,9 @@ body {
 }
 
 .logo-image {
-  width: 4.0vw; /* Розмір зображення відповідає розміру тексту логотипу */
+  width: 4.0vw; 
   height: 4.0vw;
-  margin-right: 1vw; /* Відступ між зображенням і текстом */
+  margin-right: 1vw; 
 }
 
 .logo {
