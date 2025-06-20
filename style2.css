@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  width: 1920px;
+  height: 1080px;
+  background: #fff;
+  position: relative;
+  font-family: 'Caveat', cursive;
+}
+
+/* Общие элементы */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85px;
+  background: #241E8C;
+}
+
+.book-decor {
+  position: absolute;
+  top: 85px;
+  left: 0;
+  width: 86px;
+  height: 995px;
+  background: #A92828;
+}
+
+/* Кнопки навигации */
+.button {
+  box-sizing: border-box;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  top: 17px;
+  background: #fff;
+  border: 2px solid #A92828;
+  border-radius: 5px;
+  color: #A92828;
+  font-family: 'Lilita One', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  padding-top: 16px;
+}
+
+#btn-about { left: 777px; }
+#btn-main { left: 1011px; }
+#btn-top { left: 1238px; }
+#btn-lang { left: 1470px; }
+#btn-contact { left: 1699px; }
+
+/* Названия */
+.wordway-title {
+  position: absolute;
+  top: 17px;
+  left: 115px;
+  font-size: 36px;
+  color: #A92828;
+  font-family: 'Lilita One';
+}
+
+/* Заголовки */
+.title-about, .title-who {
+  position: absolute;
+  font-size: 48px;
+  line-height: 60px;
+  color: #A92828;
+}
+
+.title-about { top: 87px; left: 710px; }
+.title-who { top: 87px; left: 1051px; }
+
+/* Блоки текста */
+.text-block {
+  position: absolute;
+  background: #241E8C;
+  color: #fff;
+  font-size: 36px;
+  line-height: 30px;
+  padding: 30px;
+}
+
+.text1 { top: 142px; left: 500px; width: 1183px; height: 200px; background: #241E8C; }
+.text2 { top: 415px; left: 600px; width: 1170px; height: 250px; background: #A92828; }
+.text3 { top: 754px; left: 500px; width: 1034px; height: 200px; background: #241E8C; }
+
+/* Изображения */
+.image {
+  position: absolute;
+  width: 170px;
+  height: 160px;
+  border-radius: 5px;
+  background-size: cover;
+}
+
+.image-flopa { top: 172px; left: 566px; background-image: url("Шлепа"); }
+.image-emilia { top: 786px; left: 566px; background-image: url("photo_5362064011480398248_x"); }
+
+/* Прочее */
+.secret-code {
+  position: absolute;
+  top: 1028px;
+  left: 109px;
+  font-size: 16px;
+  color: #000;
+}
+
+.left-intro {
+  position: absolute;
+  top: 128px;
+  left: 109px;
+  width: 380px;
+  height: auto;
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+  line-height: 50px;
+  color: #A92828;
+}
