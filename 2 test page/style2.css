@@ -117,3 +117,38 @@ body {
   line-height: 50px;
   color: #A92828;
 }
+
+#btn-about:hover {
+  border: 1px solid #241E8C;
+  background-color: #A92828;
+  transition: all .15s ease-in 0s;
+}
+#btn-main:hover {
+  border: 1px solid #241E8C;
+  background-color: #A92828;
+  transition: all .15s ease-in 0s;
+}
+#btn-top:hover {
+  border: 1px solid #241E8C;
+  background-color: #A92828;
+  transition: all .15s ease-in 0s;
+}
+#btn-lang:hover {
+  border: 1px solid #241E8C;
+  background-color: #A92828;
+  transition: all .15s ease-in 0s;
+}
+#btn-contact:hover {
+  border: 1px solid #241E8C;
+  background-color: #A92828;
+  transition: all .15s ease-in 0s;
+}
+a:hover {
+  color: #fff;
+  transition: all .15s ease-in 0s;
+}
+
+a {
+  color: #A92828;
+  text-decoration:none;
+}
