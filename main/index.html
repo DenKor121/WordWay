@@ -7,26 +7,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <div class="logo-container">
-        <img src="https://learn.logikaschool.com/uploads/student/3175104/684d91479769f.png" class="logo-image">
-        <div class="logo">WorldWay</div>
-      </div>
-      <div class="button">
-        <a href="#">Головна сторінка</a>
-        <a href="#">Початок</a>
-        <a href="#">Вивчення мови</a>
-        <a href="#">Контакти</a>
-      </div>
+  <div class="header">
+    <div class="logo-container">
+      <img src="https://learn.logikaschool.com/uploads/student/3175104/684d91479769f.png" class="logo-image">
+      <div class="wordway-title">WordWay</div>
     </div>
+    <div id="btn-about" href="main\About-us\index.html" class="button">Про нас</div>
+    <div id="btn-lang" href="{{ url_for('index') }}" class="button">Вивчення мови</div>
+    <div id="btn-stats" href="{{ url_for('index') }}" class="button">Статистика</div>      
 
     <div class="lessons">
       <h2>Уроки</h2>
       <div class="lesson">Урок 1: Вступ</div>
       <div class="lesson">Урок 2: Словниковий запас</div>
       <div class="lesson">Урок 3: Граматика</div>
-    </div>
+    </div> 
 
     <button class="stats-button">Перейти до статистики</button>
 

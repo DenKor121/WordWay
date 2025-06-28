@@ -17,6 +17,18 @@ body {
   background: #241E8C;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 4.2vw;
+}
+
+.logo-image {
+  width: 4.0vw; 
+  height: 4.0vw;
+  margin-right: 1vw; 
+}
+
 .book-decor {
   position: absolute;
   top: 85px;
@@ -44,7 +56,7 @@ body {
   padding-top: 16px;
 }
 
-#btn-about { left: 777px; }
+#btn-stats { left: 1238px; }
 #btn-main { left: 1011px; }
 #btn-top { left: 1238px; }
 #btn-lang { left: 1470px; }
