@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="ukr">
+<html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WorldWay</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WordWay</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Меню -->
   <div class="header">
     <div class="logo-container">
-      <img src="https://learn.logikaschool.com/uploads/student/3175104/684d91479769f.png" class="logo-image">
+      <img src="https://learn.logikaschool.com/uploads/student/3175104/684d91479769f.png" class="logo-image" alt="WordWay Лого">
       <div class="wordway-title">WordWay</div>
     </div>
-    <div id="btn-about" href="main\About-us\index.html" class="button">Про нас</div>
-    <div id="btn-lang" href="{{ url_for('index') }}" class="button">Вивчення мови</div>
-    <div id="btn-stats" href="{{ url_for('index') }}" class="button">Статистика</div>      
+    <div class="button">Про нас</div>
+    <div class="button">Вивчення мови</div>
+    <div class="button">Статистика</div>
+  </div>   
 
     <div class="lessons">
       <h2>Уроки</h2>
@@ -23,13 +25,11 @@
       <div class="lesson">Урок 3: Граматика</div>
     </div> 
 
-    <button class="stats-button">Перейти до статистики</button>
-
     <div class="about">
       <h1>Про платформу</h1>
       <p>WordWay — це адаптивний та оптимізований онлайн-сервіс для вивчення англійської мови.</p>
       <p>Він дозволяє готуватись до іспитів (TOEFL, IELTS, Cambridge) через інтерактивні вправи.</p>
-      <button class="test-button">Перейти до тестів</button>
+      <div class="test-button" id="startTest">Перейти до тестів</div>
     </div>
 
     <div class="contacts">
