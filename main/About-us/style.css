@@ -1,75 +1,81 @@
 body {
   margin: 0;
-  width: 1920px;
-  height: 1080px;
-  background: #fff;
+  padding: 0;
   position: relative;
-  font-family: 'Caveat', cursive;
+  width: 100%;
+  height: 200vh;
+  padding-top: 74px;
+  background: url('https://learn.logikaschool.com/uploads/student/621981/6865368f0c092.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 60px;
+  color: white;
 }
 
-/* Общие элементы */
+
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 85px;
-  background: #241E8C;
+  height: 74px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 10;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  margin-right: 4.2vw;
+  margin-right: 30px;
 }
 
 .logo-image {
-  width: 4.0vw; 
-  height: 4.0vw;
-  margin-right: 1vw; 
+  height: 40px;
+  margin-right: 10px;
 }
 
+.wordway-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #241E8C;
+}
+
+/* Навигация в одну линию рядом с логотипом */
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  margin-right: 20px;
+  font-size: 16px;
+  color: #241E8C;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.button:last-child {
+  margin-right: 0;
+}
+
+.button:hover {
+  color: #A92828;
+}
+
+/* Вернул book-decor */
 .book-decor {
   position: absolute;
-  top: 85px;
+  top: 5px;
   left: 0;
   width: 86px;
-  height: 995px;
+  height: 985px;
   background: #A92828;
-}
-
-/* Кнопки навигации */
-.button {
-  box-sizing: border-box;
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  top: 17px;
-  background: #fff;
-  border: 2px solid #A92828;
-  border-radius: 5px;
-  color: #A92828;
-  font-family: 'Lilita One', sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  padding-top: 16px;
-}
-
-#btn-stats { left: 1238px; }
-#btn-main { left: 1011px; }
-#btn-top { left: 1238px; }
-#btn-lang { left: 1470px; }
-#btn-contact { left: 1699px; }
-
-/* Названия */
-.wordway-title {
-  position: absolute;
-  top: 17px;
-  left: 115px;
-  font-size: 36px;
-  color: #A92828;
-  font-family: 'Lilita One';
 }
 
 /* Заголовки */
@@ -77,13 +83,13 @@ body {
   position: absolute;
   font-size: 48px;
   line-height: 60px;
-  color: #A92828;
+  color: #ffffff;
 }
 
 .title-about { top: 87px; left: 710px; }
 .title-who { top: 87px; left: 1051px; }
 
-/* Блоки текста */
+/* Блоки текста, уменьшил высоту на ~20px */
 .text-block {
   position: absolute;
   background: #241E8C;
@@ -91,11 +97,32 @@ body {
   font-size: 36px;
   line-height: 30px;
   padding: 30px;
+  border-radius: 12px;
 }
 
-.text1 { top: 142px; left: 500px; width: 1183px; height: 200px; background: #241E8C; }
-.text2 { top: 415px; left: 600px; width: 1170px; height: 250px; background: #A92828; }
-.text3 { top: 754px; left: 500px; width: 1034px; height: 200px; background: #241E8C; }
+.text1 {
+  top: 142px;
+  left: 500px;
+  width: 1183px;
+  height: 180px; /* Было 200px */
+  background: #241E8C;
+}
+
+.text2 {
+  top: 415px;
+  left: 600px;
+  width: 1170px;
+  height: 230px; /* Было 250px */
+  background: #A92828;
+}
+
+.text3 {
+  top: 754px;
+  left: 500px;
+  width: 1034px;
+  height: 180px; /* Было 200px */
+  background: #241E8C;
+}
 
 /* Изображения */
 .image {
@@ -110,57 +137,31 @@ body {
 .image-emilia { top: 786px; left: 566px; background-image: url("photo_5362064011480398248_x"); }
 
 /* Прочее */
-.secret-code {
-  position: absolute;
-  top: 1028px;
-  left: 109px;
-  font-size: 16px;
-  color: #000;
-}
-
 .left-intro {
   position: absolute;
   top: 128px;
   left: 109px;
   width: 380px;
   height: auto;
-  font-family: 'Caveat', cursive;
   font-size: 40px;
   line-height: 50px;
   color: #A92828;
 }
 
-#btn-about:hover {
-  border: 1px solid #241E8C;
-  background-color: #A92828;
-  transition: all .15s ease-in 0s;
-}
-#btn-main:hover {
-  border: 1px solid #241E8C;
-  background-color: #A92828;
-  transition: all .15s ease-in 0s;
-}
-#btn-top:hover {
-  border: 1px solid #241E8C;
-  background-color: #A92828;
-  transition: all .15s ease-in 0s;
-}
-#btn-lang:hover {
-  border: 1px solid #241E8C;
-  background-color: #A92828;
-  transition: all .15s ease-in 0s;
-}
-#btn-contact:hover {
-  border: 1px solid #241E8C;
-  background-color: #A92828;
-  transition: all .15s ease-in 0s;
-}
-a:hover {
-  color: #fff;
-  transition: all .15s ease-in 0s;
+.secret-code {
+  position: absolute;
+  top: 1428px;
+  left: 109px;
+  font-size: 16px;
+  color: #bababa;
 }
 
 a {
   color: #A92828;
-  text-decoration:none;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #fff;
 }
