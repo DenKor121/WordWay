@@ -1,13 +1,9 @@
-/* Стили для меню */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
-
-  background: url('https://learn.logikaschool.com/uploads/student/621981/6865368f0c092.jpg');
-  background-size: cover;
+  background: #fff;
 }
-
 
 .header {
   position: fixed;
@@ -21,7 +17,6 @@ body {
   padding: 0 30px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   z-index: 10;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .logo-container {
@@ -46,66 +41,36 @@ body {
   font-size: 18px;
   color: #241E8C;
   cursor: pointer;
-  user-select: none;
-  transition: color 0.3s ease;
 }
 
 .button:hover {
   color: #A92828;
 }
 
-/* --- Твой существующий CSS --- */
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Courier New', Courier, monospace;
-  background: #FFFFFF;
-}
-
 .container {
   position: relative;
   width: 100%;
-  max-width: 1920px;
   height: 100vh;
-  overflow: hidden;
-  padding-top: 74px; /* Отступ под меню */
+  padding-top: 74px;
+  background: url('https://learn.logikaschool.com/uploads/student/621981/6865368f0c092.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 60px;
+  color: white;
 }
 
-/* Фоновое изображение */
-.background-image {
-  position: absolute;
-  top: 74px;
-  left: 0;
-  width: 100%;
-  height: calc(100vh - 74px);
-  background: url('photo_5416134089209148345_y.jpg') no-repeat center center/cover;
-  z-index: 0;
-}
-
-/* Текстовый блок */
 .hero-text {
-  position: absolute;
-  top: 160px;
-  left: 61px;
-  max-width: 900px;
   font-size: 1.6vw;
-  line-height: 1.5;
-  font-weight: 400;
-  z-index: 1;
+  max-width: 900px;
   background: linear-gradient(89.25deg, #A92828 0.62%, #241E8C 42.47%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Фоновый блок кнопки */
 .button-background {
-  position: absolute;
-  bottom: 55px;
-  left: 61px;
   width: 600px;
   max-width: 90%;
   height: 100px;
@@ -113,31 +78,84 @@ body {
   opacity: 0.9;
   box-shadow: 0px 10px 0px #3F1536;
   border-radius: 30px;
-  z-index: 1;
+  margin-top: 40px;
 }
 
-/* Кнопка */
 .test-button {
-  position: absolute;
-  bottom: 80px;
-  left: 80px;
   width: 540px;
   height: 60px;
-  
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-
   background: linear-gradient(90deg, #8A87BE 0%, #AC3E90 48.08%, #D27C7C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
+  margin-left: 20px;
+  margin-top: -80px;
+  position: relative;
   z-index: 2;
+}
+
+.quiz-cont {
+  display: none;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 120px auto;
+  transition: box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.quiz-cont:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.answers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.answers button {
+  min-width: 100px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.answers button:hover {
+  background-color: #0056b3;
+}
+
+.correct {
+  background-color: #28a745 !important;
+}
+
+.incorrect {
+  background-color: #dc3545 !important;
+}
+
+#timer {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#result {
+  display: none;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
 }
