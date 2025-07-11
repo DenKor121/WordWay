@@ -1,44 +1,60 @@
-* { 
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  font-family: 'Lilita One', sans-serif;
-  background-color: #ffffff;
-  height: 100vh;
-  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 200vh;
+  padding-top: 74px;
+  background: url('https://learn.logikaschool.com/uploads/student/621981/6865368f0c092.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 60px;
+  color: white;
 }
 
+
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 10vh; /* Висота панелі */
-  background-color: #241e8c;
+  height: 74px;
+  background-color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Вирівнювання */
-  padding: 0 5vw; /* Відступи */
-  color: #ffffff;
+  padding: 0 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 10;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
+  margin-right: 40px;
 }
 
 .logo-image {
-  width: 5vw; /* Розмір логотипу */
-  height: 5vw; /* Розмір логотипу */
-  margin-right: 1vw; 
+  height: 40px;
+  margin-right: 10px;
 }
 
 .wordway-title {
-  font-size: 36px; /* Розмір шрифту */
+  font-size: 24px;
+  font-weight: bold;
+  color: #241E8C;
+}
+
+.button {
+  margin-right: 30px;
+  font-size: 18px;
+  color: #241E8C;
+  cursor: pointer;
+}
+
+.button:hover {
   color: #A92828;
-  font-family: sans-serif;
 }
 
 .button-container {
@@ -46,27 +62,10 @@ body {
   gap: 15px; /* Відстань між кнопками */
 }
 
-.button {
-  box-sizing: border-box;
-  width: 120px; /* Зменшена ширина кнопок */
-  height: 40px; /* Зменшена висота кнопок */
-  background: #fff;
-  border: 2px solid #A92828;
-  border-radius: 5px;
-  color: #A92828;
-  font-family: 'Lilita One', sans-serif;
-  font-size: 14px; /* Зменшений розмір шрифту */
-  line-height: 18px;
-  text-align: center;
-  padding-top: 10px; /* Відступ всередині кнопки */
-}
-
 #btn-about { margin-left: auto; } /* Вирівнюємо кнопки праворуч */
 
 .button:hover {
-  border: 1px solid #241E8C;
-  background-color: #A92828;
-  transition: all .15s ease-in 0s;
+  color: #A92828;
 }
 
 .lessons {
@@ -75,10 +74,10 @@ body {
   left: 4vw;
   width: 28vw; /* Ширина */
   height: 65vh;
-  background-color: #a92828;
-  border-radius: 2.6vw;
-  padding: 2vw; /* Відступи */
-  color: #ffffff;
+  line-height: 60px;
+  font-weight: 400;
+  background: linear-gradient(90deg, #8A87BE 0%, #AC3E90 48.08%, #D27C7C 100%);
+  border-radius: 20px;
 }
 
 .lessons h2 {
@@ -96,56 +95,50 @@ body {
   box-shadow: 0 0.2vw 0.4vw rgba(0,0,0,0.1);
 }
 
-.stats-button {
-  position: absolute;
-  top: 85vh; /* Відстань від верхньої панелі */
-  left: 4vw;
-  width: 28vw;
-  height: 10vh;
-  background-color: #241e8c;
-  color: #ffffff;
-  font-size: 1.9vw;
-  border-radius: 1.7vw;
-  border: none;
-  cursor: pointer;
-  font-family: 'Lilita One', sans-serif;
-  transition: background-color 0.3s;
-}
-
-.stats-button:hover {
-  background-color: #1a166e;
-}
-
 .about {
   position: absolute;
   top: 12vh;
   left: 35vw; /* Відстань */
   width: 57vw; /* Ширина */
-  color: #000000;
+  color: #1a166e;
 }
 
 .about h1 {
+  margin: 30px;
   font-size: 2.5vw;
-  color: #a92828;
+  color: #1a166e;
   margin-bottom: 1.7vw;
 }
 
 .about p {
+  margin: 30px;
   font-size: 1.4vw;
   line-height: 1.6;
   margin-bottom: 2.3vw;
+  color: white;
 }
 
 .test-button {
+  margin: 30px;
   background-color: #a92828;
   color: #ffffff;
   font-size: 1.9vw;
-  padding: 1.2vw 2.3vw;
+  padding: 20px;
   border: none;
   border-radius: 1.7vw;
   cursor: pointer;
   font-family: 'Lilita One', sans-serif;
   transition: background-color 0.3s;
+
+  line-height: 60px;
+  font-weight: 400;
+  background: linear-gradient(90deg, #8A87BE 0%, #AC3E90 48.08%, #D27C7C 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 
 .test-button:hover {
@@ -159,5 +152,5 @@ body {
   width: 23vw; /* Ширина */
   font-size: 1.2vw;
   line-height: 1.8;
-  color: #000000;
+  color: #1a166e;
 }
