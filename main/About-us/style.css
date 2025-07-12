@@ -3,7 +3,7 @@ body {
   padding: 0;
   position: relative;
   width: 100%;
-  height: 200vh;
+  height: 250vh;
   padding-top: 74px;
   background: url('https://learn.logikaschool.com/uploads/student/621981/6865368f0c092.jpg') no-repeat center center/cover;
   display: flex;
@@ -12,6 +12,7 @@ body {
   align-items: flex-start;
   padding-left: 60px;
   color: white;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -156,4 +157,8 @@ a {
 
 a:hover {
   color: #fff;
+}
+
+a {
+  text-decoration: none
 }
