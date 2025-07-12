@@ -12,6 +12,7 @@ body {
   align-items: flex-start;
   padding-left: 60px;
   color: white;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -76,13 +77,15 @@ body {
   height: 65vh;
   line-height: 60px;
   font-weight: 400;
-  background: linear-gradient(90deg, #8A87BE 0%, #AC3E90 48.08%, #D27C7C 100%);
+  background: linear-gradient(90deg, #241E8C 0%, #A92828 48.08%, #e1dfea 100%);
   border-radius: 20px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .lessons h2 {
   font-size: 2vw; /* Розмір шрифту */
   margin-bottom: 1.2vw;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .lesson {
@@ -93,6 +96,7 @@ body {
   margin-bottom: 1.2vw;
   font-size: 1.4vw;
   box-shadow: 0 0.2vw 0.4vw rgba(0,0,0,0.1);
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .about {
@@ -127,12 +131,12 @@ body {
   border: none;
   border-radius: 1.7vw;
   cursor: pointer;
-  font-family: 'Lilita One', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   transition: background-color 0.3s;
 
   line-height: 60px;
   font-weight: 400;
-  background: linear-gradient(90deg, #8A87BE 0%, #AC3E90 48.08%, #D27C7C 100%);
+  background: linear-gradient(90deg, #241E8C 0%, #A92828 48.08%, #e1dfea 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,5 +156,11 @@ body {
   width: 23vw; /* Ширина */
   font-size: 1.2vw;
   line-height: 1.8;
-  color: #1a166e;
+  color: #ffffff;
+  background: linear-gradient(90deg, #241E8C 0%, #A92828 48.08%, #e1dfea 100%);
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none
 }
