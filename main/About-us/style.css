@@ -108,20 +108,12 @@ body {
   background: #241E8C;
 }
 
-.text2 {
-  top: 415px;
-  left: 600px;
-  width: 1170px;
-  height: 230px; /* Было 250px */
-  background: #A92828;
-}
-
 .text3 {
-  top: 754px;
+  top: 454px;
   left: 500px;
   width: 1034px;
   height: 180px; /* Было 200px */
-  background: #241E8C;
+  background: #8c1e1e;
 }
 
 /* Изображения */
@@ -150,10 +142,10 @@ body {
 
 .secret-code {
   position: absolute;
-  top: 1428px;
+  top: 1180px;
   left: 109px;
   font-size: 16px;
-  color: #bababa;
+  color: #cdcdcd;
 }
 
 a {
