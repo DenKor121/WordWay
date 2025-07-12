@@ -100,8 +100,9 @@ function endQuiz() {
 
   resultDiv.innerHTML = `
     <p><strong>Тест завершено!</strong></p>
-    <p>Час проходження: ${timeElapsed} сек</p>
-    <p>Правильних відповідей: ${correctCount} з ${shuffledQuestions.length}</p>
+    <p class="test-p1"><strong>Тест завершено!</strong></p>
+    <p class="test-p2">Час проходження: ${timeElapsed} сек</p>
+    <p class="test-p3">Правильних відповідей: ${correctCount} з ${shuffledQuestions.length}</p>
     <br>
   `;
 
