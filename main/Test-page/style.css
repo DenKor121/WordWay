@@ -129,14 +129,14 @@ body {
   padding: 10px;
   font-size: 15px;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: #241E8C;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 .answers button:hover {
-  background-color: #0056b3;
+  background-color: #A92828;
 }
 
 .correct {
@@ -144,7 +144,7 @@ body {
 }
 
 .incorrect {
-  background-color: #dc3545 !important;
+  background-color: #A92828 !important;
 }
 
 #timer {
@@ -158,4 +158,21 @@ body {
   font-weight: bold;
   margin-top: 30px;
   text-align: center;
+}
+
+.test-p1 {
+  color: #241E8C;
+}
+
+.test-p2 {
+  color: #A92828;
+}
+
+
+.test-p3 {
+  color: #28a745;
+}
+
+a {
+  text-decoration: none
 }
