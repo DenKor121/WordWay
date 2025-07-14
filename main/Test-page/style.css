@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
-  background: #fff;
 }
 
 .header {
@@ -59,6 +58,7 @@ body {
   align-items: flex-start;
   padding-left: 60px;
   color: white;
+  opacity: 0.9px;
 }
 
 .hero-text {
@@ -74,8 +74,17 @@ body {
   width: 600px;
   max-width: 90%;
   height: 100px;
+  background: linear-gradient(90deg, #3730b6 0%, #862f70 45.67%, #b43131 100%);
+  box-shadow: 0px 10px 0px #3F1536;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+
+.button-background:hover {
+  width: 600px;
+  max-width: 90%;
+  height: 100px;
   background: linear-gradient(90deg, #241E8C 0%, #6A2358 45.67%, #A92828 100%);
-  opacity: 0.9;
   box-shadow: 0px 10px 0px #3F1536;
   border-radius: 30px;
   margin-top: 40px;
@@ -87,17 +96,12 @@ body {
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  background: linear-gradient(90deg, #8A87BE 0%, #AC3E90 48.08%, #D27C7C 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   margin-left: 20px;
   margin-top: -80px;
   position: relative;
-  z-index: 2;
 }
 
 .quiz-cont {
