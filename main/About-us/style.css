@@ -3,9 +3,8 @@ body {
   padding: 0;
   position: relative;
   width: 100%;
-  height: 250vh;
+  height: 200vh;
   padding-top: 74px;
-  background: url('https://learn.logikaschool.com/uploads/student/621981/6865368f0c092.jpg') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +81,7 @@ body {
 /* Заголовки */
 .title-about, .title-who {
   position: absolute;
-  font-size: 48px;
+  font-size: 1vw;
   line-height: 60px;
   color: #ffffff;
 }
@@ -95,25 +94,25 @@ body {
   position: absolute;
   background: #241E8C;
   color: #fff;
-  font-size: 36px;
+  font-size: 1.6vw; 
   line-height: 30px;
   padding: 30px;
   border-radius: 12px;
 }
 
 .text1 {
-  top: 142px;
+  top: 122px;
   left: 500px;
-  width: 1183px;
-  height: 180px; /* Было 200px */
+  width: 800px;
+  height: 120px;
   background: #241E8C;
 }
 
 .text3 {
-  top: 454px;
+  top: 374px;
   left: 500px;
-  width: 1034px;
-  height: 180px; /* Было 200px */
+  width: 800px;
+  height: 120px; /* Было 200px */
   background: #8c1e1e;
 }
 
@@ -136,16 +135,16 @@ body {
   left: 109px;
   width: 380px;
   height: auto;
-  font-size: 40px;
+  font-size: 1.6vw; 
   line-height: 50px;
   color: #A92828;
 }
 
 .secret-code {
   position: absolute;
-  top: 1180px;
+  top: 1080px;
   left: 109px;
-  font-size: 16px;
+  font-size: 1vw;
   color: #cdcdcd;
 }
 
