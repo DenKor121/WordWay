@@ -48,8 +48,9 @@ function shuffleANS(arr) {
 }
 
 function shuffleQuestions() {
-  shuffledQuestions = [...questions];
-  shuffleANS(shuffledQuestions);
+  const shuffled = [...questions];
+  shuffleANS(shuffled);
+  shuffledQuestions = shuffled.slice(0, 10);
 }
 
 function loadNewQuestion() {
@@ -69,6 +70,8 @@ function loadNewQuestion() {
     btn.classList.remove("correct", "incorrect");
     btn.disabled = false;
   }
+
+  document.getElementById("progress").innerText = `Питання ${currentQuestionIndex + 1} з ${shuffledQuestions.length}`;
 }
 
 function checkAnswer(selectedText, buttonElement) {
@@ -90,7 +93,7 @@ function checkAnswer(selectedText, buttonElement) {
   setTimeout(() => {
     currentQuestionIndex++;
     loadNewQuestion();
-  }, 2000);
+  }, 1500);
 }
 
 function endQuiz() {
@@ -100,7 +103,6 @@ function endQuiz() {
 
   resultDiv.innerHTML = `
     <p><strong>Тест завершено!</strong></p>
-    <p class="test-p1"><strong>Тест завершено!</strong></p>
     <p class="test-p2">Час проходження: ${timeElapsed} сек</p>
     <p class="test-p3">Правильних відповідей: ${correctCount} з ${shuffledQuestions.length}</p>
     <br>
@@ -108,9 +110,7 @@ function endQuiz() {
 
   const homeBtn = document.createElement("button");
   homeBtn.innerText = "Повернутися на головний екран";
-  homeBtn.style.fontSize = "18px";
-  homeBtn.style.padding = "10px 20px";
-  homeBtn.style.cursor = "pointer";
+  homeBtn.classList.add("btn-main");
   homeBtn.onclick = () => {
     document.getElementById("main-screen").style.display = "flex";
     resultDiv.style.display = "none";
@@ -140,9 +140,9 @@ window.onload = function () {
     loadNewQuestion();
 
     for (let i = 0; i < 5; i++) {
-      document.getElementById("answer" + (i + 1)).addEventListener("click", function () {
+      document.getElementById("answer" + (i + 1)).onclick = function () {
         checkAnswer(this.innerText, this);
-      });
+      };
     }
   });
 };
