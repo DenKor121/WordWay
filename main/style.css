@@ -5,7 +5,6 @@ body {
   width: 100%;
   height: 200vh;
   padding-top: 74px;
-  background: url('https://learn.logikaschool.com/uploads/student/621981/6865368f0c092.jpg') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +21,7 @@ body {
   left: 0;
   width: 100%;
   height: 74px;
-  background-color: #fff;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   padding: 0 30px;
@@ -74,16 +73,17 @@ body {
   top: 12vh; /* Відстань від верхньої панелі */
   left: 4vw;
   width: 28vw; /* Ширина */
-  height: 65vh;
-  line-height: 60px;
-  font-weight: 400;
-  background: linear-gradient(90deg, #241E8C 0%, #A92828 48.08%, #e1dfea 100%);
+  height: 60vh;
+  line-height: 50px;
+  font-weight: 200;
+  background-color: #1a166e;
   border-radius: 20px;
   font-family: 'Courier New', Courier, monospace;
+  border: 4px solid #1a166e;
 }
 
 .lessons h2 {
-  font-size: 2vw; /* Розмір шрифту */
+  font-size: 1vw; /* Розмір шрифту */
   margin-bottom: 1.2vw;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -94,7 +94,7 @@ body {
   color: #000000;
   padding: 1.2vw;
   margin-bottom: 1.2vw;
-  font-size: 1.4vw;
+  font-size: 1vw;
   box-shadow: 0 0.2vw 0.4vw rgba(0,0,0,0.1);
   font-family: 'Courier New', Courier, monospace;
 }
@@ -119,7 +119,7 @@ body {
   font-size: 1.4vw;
   line-height: 1.6;
   margin-bottom: 2.3vw;
-  color: white;
+  color: #1a166e;
 }
 
 .test-button {
@@ -136,13 +136,12 @@ body {
 
   line-height: 60px;
   font-weight: 400;
-  background: linear-gradient(90deg, #241E8C 0%, #A92828 48.08%, #e1dfea 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   position: relative;
-  z-index: 2;
+  box-shadow: 3px 3px 0px 5px #852727;
 }
 
 .test-button:hover {
@@ -157,8 +156,9 @@ body {
   font-size: 1.2vw;
   line-height: 1.8;
   color: #ffffff;
-  background: linear-gradient(90deg, #241E8C 0%, #A92828 48.08%, #e1dfea 100%);
+  background-color: #1a166e;
   border-radius: 5px;
+  border: 5px solid #1a166e;
 }
 
 a {
