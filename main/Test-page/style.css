@@ -81,6 +81,9 @@ body {
 }
 
 .button-background:hover {
+  width: 600px;
+  max-width: 90%;
+  height: 100px;
   background: linear-gradient(90deg, #241E8C 0%, #6A2358 45.67%, #A92828 100%);
   box-shadow: 0px 10px 0px #3F1536;
   border-radius: 30px;
@@ -134,16 +137,10 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.answers button:hover:not(:disabled) {
+.answers button:hover {
   background-color: #A92828;
-}
-
-.answers button:disabled {
-  cursor: default;
-  opacity: 0.7;
 }
 
 .correct {
@@ -175,10 +172,29 @@ body {
   color: #A92828;
 }
 
+
 .test-p3 {
   color: #28a745;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none
+}
+
+#result button {
+  background: linear-gradient(90deg, #241E8C 0%, #6A2358 45.67%, #A92828 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 12px 24px;
+  cursor: pointer;
+  box-shadow: 0px 5px 0px #3F1536;
+  transition:0.3s, transform 0.2s;
+}
+
+#result button:hover {
+  background: linear-gradient(90deg, #191561 0%, #441639 45.67%, #681818 100%);
+  transform: translateY(-2px);
+  border-radius: 20px;
 }
