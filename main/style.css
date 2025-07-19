@@ -80,23 +80,26 @@ body {
   border-radius: 20px;
   font-family: 'Courier New', Courier, monospace;
   border: 4px solid #1a166e;
+  box-shadow: 7px 10px 5px 3px #6d778e;
+  transition: 1s;
 }
 
 .lessons h2 {
-  font-size: 1vw; /* Розмір шрифту */
+  font-size: 1.7vw; /* Розмір шрифту */
   margin-bottom: 1.2vw;
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 .lesson {
   background-color: #ffffff;
   border-radius: 1.7vw;
-  color: #000000;
+  color: #1a166e;
   padding: 1.2vw;
   margin-bottom: 1.2vw;
-  font-size: 1vw;
-  box-shadow: 0 0.2vw 0.4vw rgba(0,0,0,0.1);
+  font-size: 1.2vw;
   font-family: 'Courier New', Courier, monospace;
+  transition: 1s;
 }
 
 .about {
@@ -145,7 +148,8 @@ body {
 }
 
 .test-button:hover {
-  background-color: #911e1e;
+  background-color: #e02f2f;
+  box-shadow: 3px 3px 0px 5px #a43030;
 }
 
 .contacts {
@@ -159,8 +163,51 @@ body {
   background-color: #1a166e;
   border-radius: 5px;
   border: 5px solid #1a166e;
+  box-shadow: 3px 5px 5px 3px #6d778e;
+  transition: 1s;
 }
 
 a {
   text-decoration: none
+}
+
+.pmain {
+  border-bottom: 1px solid #a43030;
+  transition: 0.3s;
+}
+
+.p2main {
+  border-bottom: 1px solid #a43030;
+  transition: 0.3s;
+}
+
+h1:hover {
+  color: #a43030;
+  transition: 0.3s;
+}
+
+.pmain:hover {
+  border-bottom: 1px solid #241E8C;
+  color: #a43030;
+}
+
+.p2main:hover {
+  border-bottom: 1px solid #241E8C;
+  color: #a43030;
+}
+
+.lesson:hover{
+  color: #a43030;
+}
+
+.lessons:hover{
+  background-color: #a43030;
+  border: 4px solid #a43030;
+  box-shadow: 7px 10px 5px 3px #764141;
+}
+
+.contacts:hover {
+  background-color: #a43030;
+  border: 5px solid #a43030;
+  box-shadow: 3px 7px 5px 3px #764141;
 }
